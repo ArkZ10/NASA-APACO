@@ -4,10 +4,15 @@ html {
   scroll-behavior: smooth; 
 }
 
-
-/* zoom on :hover
-effect cursor
-gradient font */
+/* CSS for interactive star background */
+#starCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9999; /* Keep the stars in the background */
+}
 
 @font-face {
   font-family: 'GRIFTER';
@@ -19,49 +24,51 @@ gradient font */
 body {
   width: 100vw;
   height: 100vh;
-  margin:0;
-  background: #222;
+  margin: 0;
+  background: #000000;
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-x: hidden;
-  scroll-snap-type:y unset; /* Enables scroll snapping */
+  scroll-snap-type: y unset; /* Enables scroll snapping */
+  position: relative;
 }
 
-.section1  {
-  width:100%;
+.section1 {
+  width: 100%;
   min-height: 100vh;
   position: relative;
   transform-style: preserve-3d;
-  width: 100vw;
   z-index: -1;
   height: 100vh; /* Full height of viewport */
 }
 
 .section1::before {
-  content:"";
-  width:100%;
+  content: "";
+  width: 100%;
   height: 100%;
   position: absolute;
-  background: url("img/photo-1506318137071-a8e063b4bec0.jpeg") top center;
+  /* background: url("img/photo-1506318137071-a8e063b4bec0.jpeg") top center; */
   background-size: cover;
   transform: translateZ(-4px) scale(5);
   filter: blur(0.7px);
 }
+
 .section1::after {
-  content:"";
-  width:100%;
+  content: "";
+  width: 100%;
   height: 60%;
   rotate: 30%;
-  top:40%;
+  top: 40%;
   position: absolute;
   background: url("img/pexels-pixabay-47367.png") top center;
-  -webkit-filter:brightness(50%);
+  -webkit-filter: brightness(50%);
   background-size: cover;
 }
+
 .section1 .text {
   padding-top: 7%;
-  left:50%;
-  transform: translateZ(-0.5px) scale(1.5,1.5) translate(-33%,0%);
+  left: 50%;
+  transform: translateZ(-0.5px) scale(1.5, 1.5) translate(-33%, 0%);
   position: absolute;
 }
 
@@ -71,9 +78,9 @@ body {
   -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
   font-weight: bold;
   font-size: 10VW;
-  text-shadow: 0.3px 0.3px 2px rgba(0,0,0,0.1),
-  5px 5px 170px rgba(210, 208, 63, 0.6);
-  line-height:100%;
+  text-shadow: 0.3px 0.3px 2px rgba(0, 0, 0, 0.1),
+              5px 5px 170px rgba(210, 208, 63, 0.6);
+  line-height: 100%;
 }
 
 .gradient-gold {
@@ -90,30 +97,29 @@ body {
   font-weight: bold;
 }
 
-.black-border{
+.black-border {
   background: rgba(0, 0, 0, 1); /* Warna gradien */
-  -webkit-background-clip:padding-box;
-  -webkit-text-fill-color:#ffffff; 
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: #ffffff; 
 }
 
-.black-border2{
+.black-border2 {
   background: rgba(0, 0, 0, 0.5); /* Warna gradien */
-  -webkit-background-clip:padding-box;
-  -webkit-text-fill-color:#ffffff; 
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: #ffffff; 
 }
 
-.black-border3{
+.black-border3 {
   background: rgba(0, 0, 0, 0.9); /* Warna gradien */
-  -webkit-background-clip:padding-box;
-  -webkit-text-fill-color:#ffffff; 
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: #ffffff; 
 }
-
 
 .text {
   font-family: 'GRIFTER';
   text-align: center;
   font-size: 5vw;
-  color:white;
+  color: white;
 }
 
 .section2 {
@@ -121,44 +127,44 @@ body {
   flex-direction: column;
   background-color: rgb(0, 0, 0);
   min-height: 100vh;
-  position: flex;
+  position: relative;
   transform-style: preserve-3d;
   width: 100%;
   height: 100vh; 
-  justify-content:first baseline;
+  justify-content: first baseline;
   align-items: center;
 }
 
-.section2 .headc{
+.section2 .headc {
   display: flex;
   flex-direction: column;
   padding-inline: 10%;
   padding-top: 2%;
 }
 
-.section2 .bodyc{
+.section2 .bodyc {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: top;
   padding-top: 5%;
   padding-right: 7%;
 }
 
-.section2 .bodyc img{
- width: 40%;
+.section2 .bodyc img {
+  width: 40%;
 }
 
 .section2 .text {
   font-size: 4vw;
   color: white;
-  justify-content:left;
+  justify-content: left;
 }
 
 .bodyc .text {
   font-size: 2vw;
   color: white;
-  text-align:center;
+  text-align: center;
   padding-left: 15%;
   padding-right: 5%;
   padding-top: 5%;
@@ -169,10 +175,9 @@ body {
   color: white;
   font-family: 'GRIFTER';
   text-align: center;
-
 }
 
-.tripletbox{
+.tripletbox {
   padding-top: 5%;
   display: flex;
   flex-direction: row;
@@ -181,7 +186,7 @@ body {
   width: 700px;
 }
 
-.box{
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,19 +201,18 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("img/background sad.png");
-  background-size:100%;
+  background-size: 100%;
   min-height: 100vh;
-  /* transform-style: preserve-3d; */
   width: 100%;
   height: 100vh; 
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   align-items: top;
 }
 
-.section3 img{
+.section3 img {
   padding-top: 6%;
-  justify-content:center;
+  justify-content: center;
   width: 18%;
   height: auto;
   -webkit-filter: brightness(75%) drop-shadow(0px 25px 10px rgb(16, 16, 16));
@@ -229,21 +233,18 @@ body {
   text-align: center;
 }
 
-
-
 .section4 {
   display: flex;
   flex-direction: column;
-  background-color:#0d171d;
-  background-size:100%;
+  background-color: #0d171d;
+  background-size: 100%;
   min-height: 50vh;
-  /* transform-style: preserve-3d; */
   width: 100%;
   height: 20vh; 
-  justify-content:center;
+  justify-content: center;
 }
 
-.section4 img{
+.section4 img {
   width: 15%;
   height: auto;
   -webkit-transform: scaleX(-1);
@@ -271,28 +272,28 @@ body {
 .section5 {
   display: flex;
   flex-direction: column;
-  background-color:#ffffff;
-  background-size:100%;
-  min-height:  80vh+50px;
+  background-color: #ffffff;
+  background-size: 100%;
+  min-height: 80vh+50px;
   width: 100%;
   height: 80vh+50px; 
-
   font-family: 'GRIFTER';
   text-align: center;
   font-size: 1.8vw;
-  color:white;
+  color: white;
 }
 
-.section5 .Header{
+.section5 .Header {
   display: flex;
   background-color: #0d171d;
 }
 
-.section5 .Main{
+.section5 .Main {
   display: flex;
   flex-direction: row;
   background-color: #0d171d;
 }
+
 
 .section5 .Main .Left{
   display: flex;

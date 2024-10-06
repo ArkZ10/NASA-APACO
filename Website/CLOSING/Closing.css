@@ -783,11 +783,17 @@ body {
   padding-inline: 15vh;
 
   background: #003973;
-  background: linear-gradient(135deg, #343834, #0f9b0f);
+  background: linear-gradient(135deg, #282c28, #0f9b0f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
 
+
+  text-shadow: 25px 25px 25px rgba(0,0,0,0.1),
+  22px 22px 170px rgba(9, 92, 9, 0.795);
+  line-height:100%;
 }
+
+
 
 .button8 {
   display: inline-block;

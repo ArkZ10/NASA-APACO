@@ -167,7 +167,7 @@ body {
   padding-top: 10vh;
   padding-inline: 6vw;
 
-  background: linear-gradient(135deg, #003973, #e5e5be);
+  background: linear-gradient(135deg, #003973, #e39104);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
 
@@ -177,11 +177,10 @@ body {
   font-size: 3vw;
   padding-top: 40vh;
   text-align: center;
-  
 }
 
 .section3 .text3{
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 5vh;
   text-align: justify;
   padding-inline: 2vw;
@@ -195,7 +194,7 @@ body {
 }
 
 .section3 .text5{
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 5vh;
   text-align: justify;
   padding-inline: 2vw;
@@ -265,42 +264,41 @@ body {
   font-size: 3vw;
   padding-top: 5vh;
   text-align: center;
+
   
 }
 
 .section4 .text3{
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 5vh;
   text-align: justify;
-  padding-inline: 2vw;
+  padding-inline: 10vw;
 }
 
 .section4 .text4{
   font-size: 3vw;
   padding-top: 5vh;
   text-align: center;
-  
 }
 
 .section4 .text5{
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 5vh;
   text-align: justify;
-  padding-inline: 2vw;
+  padding-inline: 10vw;
 }
 
 .section4 .text6{
   font-size: 3vw;
   padding-top: 5vh;
   text-align: center;
-  
 }
 
 .section4 .text7{
-  font-size: 2vw;
+  font-size: 1.8vw;
   padding-top: 5vh;
   text-align: justify;
-  padding-inline: 2vw;
+  padding-inline: 10vw;
 }
 
 .section4 span{
@@ -766,7 +764,7 @@ ul {
 button{
   /* position:relative; */
   align-self: flex-end;
-  top: 200vh;
+  top: 100vh;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 20px;
@@ -795,7 +793,12 @@ button::after{
 }
 
 
-
+.textH1{
+  font-size: 5vh;
+  align-self: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
 
 .section17{
   display:flex;
@@ -810,15 +813,30 @@ button::after{
 
 .graph1 .tg1{
   text-align: center;
-  font-size:3vh;
+  font-size:2vh;
 }
 .graph2 .tg1{
   text-align: center;
-  font-size:3vh;
+  font-size:2vh;
 }
 .graph3 .tg1{
   text-align: center;
-  font-size:3vh;
+  font-size:2vh;
+}
+
+
+.graph1 .tg2{
+  text-align: center;
+  font-size:2vh;
+
+}
+.graph2 .tg2{
+  text-align: center;
+  font-size:2vh;
+}
+.graph3 .tg2{
+  text-align: center;
+  font-size:2vh;
 }
 
 

@@ -1,0 +1,185 @@
+html {
+    height: 100vh;
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    scroll-snap-type:y unset;
+    font-family: 'GRIFTER';
+    font-size: 3vw;
+    color:rgb(255, 255, 255);
+    overflow-y: hidden;
+}
+  
+.section{
+    flex-direction: column;
+    background-image: url(../../img/mouse_sick_eye.jpg);
+    min-height: 100%;
+    background-size: 100%;
+    position:fixed;
+    transform-style: preserve-3d;
+    width: 100vw;
+    height: 100%; 
+    justify-content:baseline;
+    align-items: center;
+    z-index: -1;
+}
+
+.sqr{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.498);
+    z-index: -1;
+}
+
+.section .header{
+    display: flex;
+    padding-top: 10vh;
+    justify-content: center;
+    align-self: center;
+    background: linear-gradient(150deg, #01761a, #59df8c); /* Warna gradien */
+    -webkit-background-clip: text; /* Gunakan latar belakang untuk teks */
+    -webkit-text-fill-color: transparent; 
+    font-size: 8vw;
+}
+
+.main img{
+    padding-left: 0vw;
+    padding-top: 2vh;
+    position: fixed;
+    height: 70vh;
+    width: 29vw;
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)  rotate(8deg);
+
+    object-position: 100% 100%;
+}
+
+.black-border{
+    background: rgba(238, 190, 19, 0.692); /* Warna gradien */
+    -webkit-background-clip:padding-box;
+    -webkit-text-fill-color:#ffffff; 
+}
+
+.Ans1 {
+margin-top: 2vh;
+display: inline-block;
+padding: 0.5rem 1rem;
+color: #353535;
+letter-spacing: 0.15rem;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 4;
+font-weight:600;
+text-decoration: none;
+cursor: pointer;
+}
+
+.Ans1:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(241, 241, 241, 0.7);
+border-radius: 1rem;
+z-index: -2;
+}
+
+.Ans1:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: hsla(0, 0%, 47%, 0.7); /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 1rem;
+z-index: -1;
+}
+.Ans1:hover {
+color: #fff;
+}
+.Ans1:hover:before {
+width: 100%;
+}
+    
+.texting .info{
+    text-align: center;
+    justify-items: center;
+    font-size: 5vh;
+    padding-inline: 10vw;
+    padding-top: 10vh;
+    padding-left: 28vw;
+}
+
+.button1 {
+display: inline-block;
+padding: 1.5vh 4vh;
+border-radius: 5vh;
+color: #353535;
+text-transform: uppercase;
+font-size: 2.5vh;
+letter-spacing: 0.1vh;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 1;
+font-weight:600;
+top: 90vh;
+left: 85vw;
+font-family: Arial;
+text-decoration: none;
+}
+.button1:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(241, 241, 241);
+border-radius: 5vh;
+z-index: -2;
+}
+.button1:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: #797979; /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 5vh;
+z-index: -1;
+}
+.button1:hover {
+color: #fff;
+}
+.button1:hover:before {
+width: 100%;
+}
+    

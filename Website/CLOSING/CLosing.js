@@ -23,8 +23,6 @@ document.querySelector('.button4').addEventListener('click', function(e) {
     document.querySelector('#sec6').scrollIntoView({ behavior: 'smooth' });
 });
 
-
-document.querySelector('.button8').addEventListener('click', function(e) {
-    e.preventDefault(); // Mencegah perilaku default link
-    window.location.href = 'index.html';
+document.getElementById('.button8').addEventListener('click', function() {
+    window.location.href = '../index.html';
 });

@@ -1,0 +1,459 @@
+html {
+    height: 100vh;
+    /* overflow: hidden; */
+    scroll-behavior: smooth; 
+    background-color: #000000;
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  
+  font-family: 'GRIFTER';
+  color:rgb(255, 255, 255);
+  perspective: 1px;
+  overflow-x: hidden
+}
+
+.text {
+  align-self: center;
+  font-family: 'GRIFTER';
+  text-align: center;
+  font-size: 1VW;
+  /* color:white; */
+}
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+
+  background-color:#000000;
+  background-size:100%;
+
+  color:white;
+}
+
+.section1 .text1{
+  padding-top: 10vh;
+  font-size: 2vw;
+}
+
+.section1 .text2{
+  padding-top: 27vh;
+  font-size: 5vw;
+
+  background: #DD7457;
+  background: linear-gradient(135deg, #DD7457, #ED0F19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section2 {
+  display: flex;
+  flex-flow: row;
+
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  background: linear-gradient(135deg, #DD7457, #ED0F19);
+}
+
+.section2 img{
+  align-self: center;
+  width: auto;
+  height: 60%;
+}
+ 
+
+.section2 .info{
+  align-self: center;
+  padding-left: 4vw;
+  padding-right: 10vw;
+}
+
+.section2 .text1{
+  /* padding-left: 10vw; */
+  align-self: center;
+  width: auto;
+  height: 30%;
+  font-size: 3vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+ 
+.section2 .text2{
+  /* padding-left: 10vw; */
+  align-self: center;
+  text-align: justify;
+  width: auto;
+  height: 30%;
+  font-size: 1.8vw;
+  padding-bottom: 1vw;
+}
+
+.section2 .text2 span{
+    background: rgba(0, 0, 0, 1); /* Warna gradien */
+    -webkit-background-clip:padding-box;
+    -webkit-text-fill-color:#ffffff; 
+}
+
+
+
+.section7 .collomm{
+  display: flex;
+  flex-flow:row ;
+  background-color: #e0943c;
+  color: #000000;
+  height: 100vh;
+}
+
+.section7 .text{
+  font-size: 6vh;
+}
+
+.collomm .pp1{
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.collomm .pp2{
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+}
+
+
+
+
+
+
+.section3 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section3 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section3 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section3 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 5vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #DD7457, #ED0F19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section3 .text2{
+  font-size: 2.5vw;
+  padding-top: 35vh;
+  text-align: justify;
+  padding-inline: 4vh;
+  
+}
+
+.section3 .text3{
+  font-size: 1.7vw;
+  padding-top: 1vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section3 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section3 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section3 img{
+  padding-top: 35vh;
+  padding-right: 5vh;
+  height: 60vh;
+}
+
+.section3 span{
+  background: rgb(51, 146, 193); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section4 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section4 img {
+  /* width: auto; */
+  height: 30vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+  /* padding-top: 35vh; */
+  padding-top: 5vh;
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section4 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section4 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 5vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #DD7457, #ED0F19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section4 .text2{
+  font-size: 2.5vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 4vh;
+  
+}
+
+.section4 .text3{
+  font-size: 3vh;
+  padding-top: 2vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 .text4{
+  font-size: 2vw;
+  text-align: center;
+  
+}
+
+.col .text4{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+  padding-right: 2vw;
+}
+
+
+.section4 span{
+  background: rgb(158, 244, 101); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+.roll{
+  background-color: white;
+  color: #000000;
+  padding-inline: 2vh;
+  font-size: 3vh;
+}
+
+.roll .sub{
+  font-size: 5vh;
+}
+
+.coll{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: #000000;
+}
+
+.coll img{
+  width: 30vw;
+  height: 100%;
+  padding-bottom: 4vh;
+}
+
+.coll .texti5{
+  text-align: justify;
+  padding-left: 20vh;
+}
+
+.roll span{
+  background: rgb(240, 73, 73); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.num4{
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(225, 139, 26);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.sub1{
+  font-size: 5vh;
+  text-align: center ;
+  padding-bottom: 2vh;  
+}
+
+
+.roll{
+  display: flex;
+  flex-flow: r;
+}
+
+.roll img{
+  width: 30vw;
+}
+
+.col1 .text1{
+  background: rgb(1, 180, 230); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+.col2 .text1{
+  background: rgb(13, 141, 30); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section5{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100vw;
+  background-color: #DD7457;
+}
+
+.section5 .sub1{
+  color: #ffffff;
+  font-size: 5vh;
+  width: 30vw;
+}
+
+.section5 img{
+  height: 30vh;
+  width: auto;
+}
+
+
+
+
+button{
+  /* position:relative; */
+  align-self: flex-end;
+  top: 100vh;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+  font-family: 'GRIFTER';
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #323638 2px;
+  text-decoration: none;
+
+  padding-inline: 2%;
+  margin-inline: 3%;
+  /* margin-bottom: 3%; */
+  transform: translateY(-7vh);
+
+  transition: 0.3s ease;
+}
+/* Hover effect */
+button:hover {
+  opacity: .5;
+}
+
+button::after{
+  color: #929292;
+}

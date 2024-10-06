@@ -1,8 +1,3 @@
-// Menu button click event to navigate to story2.html
-document.getElementById('menu').addEventListener('click', function() {
-    window.location.href = '../../story3/story3.html';
-});
-
 fetch('data/data.json')
     .then(response => {
         console.log(response);
@@ -239,4 +234,13 @@ window.addEventListener('load', function() {
     renderThirdPCAPlot();
 });
 
+
+// Menu button click event to navigate to story2.html
+document.getElementById('menu').addEventListener('click', function() {
+    window.location.href = '../whyliver/liver.html';
+});
+
+// document.getElementById('menu').addEventListener('click', function() {
+//     window.location.href = '../story3/story3.html';
+// });
 
