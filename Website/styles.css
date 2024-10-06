@@ -1,0 +1,448 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth; 
+}
+
+
+/* zoom on :hover
+effect cursor
+gradient font */
+
+@font-face {
+  font-family: 'GRIFTER';
+  src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+  url('font/grifter_bold_700-webfont.woff') format('woff'),
+  url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  background: #222;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  scroll-snap-type:y unset; /* Enables scroll snapping */
+}
+
+.section1  {
+  width:100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100vw;
+  z-index: -1;
+  height: 100vh; /* Full height of viewport */
+}
+
+.section1::before {
+  content:"";
+  width:100%;
+  height: 100%;
+  position: absolute;
+  background: url("img/photo-1506318137071-a8e063b4bec0.jpeg") top center;
+  background-size: cover;
+  transform: translateZ(-4px) scale(5);
+  filter: blur(0.7px);
+}
+.section1::after {
+  content:"";
+  width:100%;
+  height: 60%;
+  rotate: 30%;
+  top:40%;
+  position: absolute;
+  background: url("img/pexels-pixabay-47367.png") top center;
+  -webkit-filter:brightness(50%);
+  background-size: cover;
+}
+.section1 .text {
+  padding-top: 7%;
+  left:50%;
+  transform: translateZ(-0.5px) scale(1.5,1.5) translate(-33%,0%);
+  position: absolute;
+}
+
+.gradient-text-bio {
+  background: linear-gradient(70deg, #e3e2d9, #b19a06); /* Warna gradien */
+  -webkit-background-clip: text; /* Gunakan latar belakang untuk teks */
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+  font-weight: bold;
+  font-size: 10VW;
+  text-shadow: 0.3px 0.3px 2px rgba(0,0,0,0.1),
+  5px 5px 170px rgba(210, 208, 63, 0.6);
+  line-height:100%;
+}
+
+.gradient-gold {
+  background: linear-gradient(10deg, #e3e2d9, #b19a06); /* Warna gradien */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold;
+}
+
+.gradient-blue {
+  background: linear-gradient(80deg, #040439, #941111); /* Warna gradien */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold;
+}
+
+.black-border{
+  background: rgba(0, 0, 0, 1); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#ffffff; 
+}
+
+.black-border2{
+  background: rgba(0, 0, 0, 0.5); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#ffffff; 
+}
+
+.black-border3{
+  background: rgba(0, 0, 0, 0.9); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#ffffff; 
+}
+
+
+.text {
+  font-family: 'GRIFTER';
+  text-align: center;
+  font-size: 5vw;
+  color:white;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+  position: flex;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100vh; 
+  justify-content:first baseline;
+  align-items: center;
+}
+
+.section2 .headc{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10%;
+  padding-top: 2%;
+}
+
+.section2 .bodyc{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: top;
+  padding-top: 5%;
+  padding-right: 7%;
+}
+
+.section2 .bodyc img{
+ width: 40%;
+}
+
+.section2 .text {
+  font-size: 4vw;
+  color: white;
+  justify-content:left;
+}
+
+.bodyc .text {
+  font-size: 2vw;
+  color: white;
+  text-align:center;
+  padding-left: 15%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.section2 .text2 {
+  font-size: 2vw;
+  color: white;
+  font-family: 'GRIFTER';
+  text-align: center;
+
+}
+
+.tripletbox{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  width: 700px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 200px;
+  color: #8eb28f;
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/background sad.png");
+  background-size:100%;
+  min-height: 100vh;
+  /* transform-style: preserve-3d; */
+  width: 100%;
+  height: 100vh; 
+  align-items: center;
+  justify-content:center;
+  align-items: top;
+}
+
+.section3 img{
+  padding-top: 6%;
+  justify-content:center;
+  width: 18%;
+  height: auto;
+  -webkit-filter: brightness(75%) drop-shadow(0px 25px 10px rgb(16, 16, 16));
+}
+
+.section3 .text {
+  padding-top: 1%;
+  font-size: 3vw;
+  color: rgb(239, 239, 239);
+  font-family: 'GRIFTER';
+  text-align: center;
+}
+
+.section3 .text2 {
+  font-size: 2vw;
+  color: rgb(239, 239, 239);
+  font-family: 'GRIFTER';
+  text-align: center;
+}
+
+
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  background-color:#0d171d;
+  background-size:100%;
+  min-height: 50vh;
+  /* transform-style: preserve-3d; */
+  width: 100%;
+  height: 20vh; 
+  justify-content:center;
+}
+
+.section4 img{
+  width: 15%;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: brightness(75%) drop-shadow(0px 25px 10px rgb(255, 255, 255));
+  filter: brightness(30%) drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.256));
+  align-self: center; 
+}
+
+.section4 .text {
+  font-size: 3vw;
+  color: rgb(255, 255, 255);
+  font-family: 'GRIFTER';
+  text-align: center;
+  padding-inline: 15%;
+}
+
+.section4 .text2 {
+  font-size: 2vw;
+  color: rgb(239, 239, 239);
+  font-family: 'GRIFTER';
+  text-align: center;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffff;
+  background-size:100%;
+  min-height:  80vh+50px;
+  width: 100%;
+  height: 80vh+50px; 
+
+  font-family: 'GRIFTER';
+  text-align: center;
+  font-size: 1.8vw;
+  color:white;
+}
+
+.section5 .Header{
+  display: flex;
+  background-color: #0d171d;
+}
+
+.section5 .Main{
+  display: flex;
+  flex-direction: row;
+  background-color: #0d171d;
+}
+
+.section5 .Main .Left{
+  display: flex;
+  flex-flow: column;
+  background-image:url(/img/skysky.jpg);
+  background-size: 170%;
+  background-position: 50% 50%; 
+  height: 80vh+25px;
+  width: 50vw;
+  margin: 25px;
+  margin-right: 0px;
+}
+
+.section5 .Main .Left img{
+  position: fixed;
+  align-self: flex-start;
+  transform: translateY(120%);
+  width: 18%;
+  height: auto;
+}
+
+.section5 .Main .Left .text1{
+  font-size: 1.8vw;
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
+.section5 .Main .Left .text2{
+  font-size: 1.8vw;
+  padding-top: 10%;
+}
+
+.section5 .Main .Right .up{
+  display: flex;
+  flex-direction: column;
+  background-image:url(/img/poster.jpg);
+  background-size: 100%;
+  background-position: 0% 10%; /* Menggeser gambar */
+  height: 40vh;
+  width: 50vw;
+  margin: 25px;
+  justify-content: space-between;
+}
+
+.section5 .Main .Right .up .text1{
+  display: flex;
+  font-size: 1.8vw;
+  justify-content: center;
+}
+
+
+.section5 .Main .Right .down{
+  display: flex;
+  background-color: #ac8eb2;
+  height: 40vh;
+  width: 50vw;
+  margin: 25px;
+  background-image:url(/img/mouse.jpg);
+  background-size: 100%;
+  background-position: 60% 10%; /* Menggeser gambar */
+  justify-content: flex-end;
+}
+
+.section5 .Main .Right .down .text1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: flex-end;
+  text-align: right;
+  font-size: 1.8vw;
+  margin-left: 30%;
+}
+
+.section6{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  background-color:#ffffff;
+  background-size:100%;
+  min-height:  100vh;
+  width: 100%;
+  height: 100vh; 
+}
+
+.section6 img{
+  width:45vw;
+  height:30vh;
+  display: flex;
+  /* object-position: 100% 90%; */
+  padding-top: 8%;
+  zoom: 130%;
+
+}
+
+.section6 .text1{
+  position: fixed;
+  padding-top: 9.5%;
+  padding-left: 59.5%;
+  padding-right: 5%;
+
+  line-height:90%;
+  font-family: 'GRIFTER';
+  text-align: left;
+  font-size: 9vw;
+  color:rgb(26, 26, 26);
+}
+
+.section6 .text2{
+  padding-top: 10%;
+  padding-left: 2%;
+  padding-right: 4%;
+
+  font-family: 'GRIFTER';
+  /* justify-self: center; */
+  text-align: start;
+  font-size: 4vw;
+  color:rgb(26, 26, 26);
+}
+
+/* Simple and professional button styling */
+
+button{
+  /* position:relative; */
+  align-self: flex-end;
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+  font-family: 'GRIFTER';
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #323638 2px;
+  text-decoration: none;
+
+  padding-inline: 2%;
+  margin-inline: 3%;
+  /* margin-bottom: 3%; */
+  transform: translateY(-7vh);
+
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: .5;
+}
+
+button::after{
+  color: #929292;
+}

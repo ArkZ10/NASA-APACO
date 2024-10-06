@@ -1,0 +1,577 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth; 
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    scroll-snap-type:y unset; /* Enables scroll snapping */
+}
+
+ 
+.text {
+    font-family: 'GRIFTER';
+    text-align: center;
+    font-size: 5vw;
+    color:white;
+}
+  
+.section1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/gtest.jpg);
+    min-height: 100%;
+    background-size: 100%;
+    position: flex;
+    transform-style: preserve-3d;
+    width: 100vw;
+    height: 100%; 
+    justify-content:center;
+    align-items: center;
+}
+  
+.section1 .text1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'GRIFTER';
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.section1 .square{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* background: #000046;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #141e30, #243b55); 
+    opacity: 0.8;
+}
+
+
+.button {
+display: inline-block;
+padding: 0.5rem 1rem;
+border-radius: 10rem;
+color: #353535;
+text-transform: uppercase;
+font-size: 0.7rem;
+letter-spacing: 0.15rem;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 1;
+font-weight:600;
+top: 85vh;
+left: 85vw;
+font-family: Arial;
+text-decoration: none;
+font-size: 20px;
+}
+.button:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(241, 241, 241);
+border-radius: 10rem;
+z-index: -2;
+}
+.button:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: #797979; /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 10rem;
+z-index: -1;
+}
+.button:hover {
+color: #fff;
+}
+.button:hover:before {
+width: 100%;
+}
+
+
+
+.button1 {
+display: inline-block;
+padding: 0.5rem 1rem;
+border-radius: 10rem;
+color: #353535;
+text-transform: uppercase;
+font-size: 0.7rem;
+letter-spacing: 0.15rem;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 1;
+font-weight:600;
+top: 185vh;
+left: 90vw;
+font-family: Arial;
+text-decoration: none;
+font-size: 20px;
+}
+.button1:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(241, 241, 241);
+border-radius: 10rem;
+z-index: -2;
+}
+.button1:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: #797979; /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 10rem;
+z-index: -1;
+}
+.button1:hover {
+color: #fff;
+}
+.button1:hover:before {
+width: 100%;
+}
+
+.button2 {
+display: inline-block;
+padding: 0.5rem 1rem;
+border-radius: 10rem;
+color: #353535;
+text-transform: uppercase;
+font-size: 0.7rem;
+letter-spacing: 0.15rem;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 4;
+font-weight:600;
+top: 285vh;
+left: 85vw;
+font-family: Arial;
+text-decoration: none;
+font-size: 20px;
+}
+.button2:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(241, 241, 241);
+border-radius: 10rem;
+z-index: -2;
+}
+.button2:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: #797979; /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 10rem;
+z-index: -1;
+}
+.button2:hover {
+color: #fff;
+}
+.button2:hover:before {
+width: 100%;
+}
+
+.button3 {
+display: inline-block;
+padding: 0.5rem 1rem;
+border-radius: 10rem;
+color: #353535;
+text-transform: uppercase;
+font-size: 0.7rem;
+letter-spacing: 0.15rem;
+transition: all 0.3s;
+position: fixed;
+overflow: hidden;
+z-index: 4;
+font-weight:600;
+top: 385vh;
+left: 85vw;
+font-family: Arial;
+text-decoration: none;
+font-size: 20px;
+}
+.button3:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(241, 241, 241);
+border-radius: 10rem;
+z-index: -2;
+}
+.button3:before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background-color: #797979; /* darken(#0cf, 15%) */
+transition: all 0.3s;
+border-radius: 10rem;
+z-index: -1;
+}
+.button3:hover {
+color: #fff;
+}
+.button3:hover:before {
+width: 100%;
+}
+
+.container {
+padding-top: 50px;
+margin: 0 auto;
+width: 100%;
+text-align: center;
+}
+
+span a {
+font-size: 0.7rem;
+color: #999;
+text-decoration: underline;
+}
+
+.section2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;  
+    background-color: #141e30;
+}
+.section2 img{
+    padding-top : 20vh;
+    height: 25vh;
+    width: 90%;
+    object-fit: cover;
+    z-index: 2;
+}
+.section2 .text1{
+    padding-top: 10vh;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'GRIFTER';
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+.section2 .text2{
+    padding-top: 5vh;
+    padding-inline: 13vw;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'GRIFTER';
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+
+
+.section3 {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center;
+    justify-content: start; */
+    width: 100%;
+    height: 100vh;  
+    background-color: #ffffff;
+}
+
+.section3 img{
+    position: fixed;
+    top: 220vh;
+    left: 65vw;
+    /* transform: rotate(-20deg); */
+    width: 30vw;
+    height: 80vh;
+    font-family: 'GRIFTER';
+    color: #141e30;
+    object-fit: cover;
+    z-index: 0; 
+}
+
+.section3 .text1{
+    padding-top: 40vh;
+    padding-inline: 5vw;
+    
+    align-items: center;
+    font-size: 4vw;
+    font-family: 'GRIFTER';
+    color: #141e30;
+}
+
+.section3 .text2{
+    padding-top: 5vh;
+    padding-inline: 5vw;
+    padding-right: 37vw;
+    text-align: justify;
+    font-size: 2vw;
+    font-family: 'GRIFTER';
+    color: #141e30;
+}
+
+
+.section4 {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center;
+    justify-content: start; */
+    width: 100%;
+    height: 100vh;  
+    background-color: #742121;
+    z-index: 10;
+}
+
+.section4 .img1{
+    position: fixed;
+    top:300vh;
+    left: 0vw;
+
+    width: 100vw;
+    height: 50vh;
+    font-family: 'GRIFTER';
+    color: #141e30;
+    object-fit:cover; 
+ 
+    object-position: 50% 10%;
+    filter:brightness(80%);
+}
+
+.section4 .img2{
+    position: fixed;
+    top: 350vh;
+    left: 00vw;
+    width: 100vw;
+    height: 50vh;
+    font-family: 'GRIFTER';
+    color: #141e30;
+    object-fit: cover; 
+    filter:brightness(40%);
+}
+
+.section4 .text1{
+    top: 300vh;
+    padding-top: 11vh;
+    padding-inline: 4vw;
+    align-items: center;
+    font-size: 3vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    z-index: 2;
+}
+
+.section4 .text2{
+    padding-top: 5vh;
+    padding-inline: 5vw;
+    padding-right: 37vw;
+    /* text-align: start; */
+    font-size: 1.5vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    z-index: 2;
+}
+
+.section4 .text3{
+    top: 350vh;
+    padding-top: 20vh;
+    padding-inline: 5vw;
+    align-items: center;
+    font-size: 3vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    z-index: 2;
+}
+
+.section4 .text4{
+    padding-top: 5vh;
+    padding-inline: 5vw;
+    padding-right: 37vw;
+    text-align: justify;
+    font-size: 1.5vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    z-index: 2;
+}
+
+
+.section5 {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center;
+    justify-content: start; */
+    width: 100%;
+    height: 100vh;  
+    background-image: url(../img/door.jpg);
+    background-size: 120%;
+    background-position:10% 40%;
+}
+
+.section5 img{
+    position: fixed;
+    top:420vh;
+    left: -10vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 80vh;
+}
+
+.main .door1 {
+position: fixed;
+top: 416%;
+left: 40.5vw;
+height: 81vh;
+width: 16vw;
+background-color: #ffffff13;
+cursor: pointer;
+z-index: 5;
+}
+
+.main .door2 {
+position: fixed;
+top: 416%;
+left: 58.5vw;
+height: 81vh;
+width: 15vw;
+background-color: #ffffff20;
+cursor: pointer;
+z-index: 5;
+}
+
+.section5 .texting{   
+    display: flex;
+    flex-flow: column;
+}
+
+.section5 .text1{   
+    padding-top: 7vh;
+    padding-inline: 5vw;
+    padding-right: 60vw;
+    align-items: center;
+    font-size: 2vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    z-index: 0;
+}
+
+.section5 .text2{
+    padding-top: 65vh;
+    padding-inline: 10vw;
+    padding-right: 50vw;
+    align-items: center;
+    font-size: 2vw;
+    font-family: 'GRIFTER';
+    color: #000000;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.section5 .text3{
+    position: fixed;
+    padding-top: 1.5vh;
+    padding-bottom: 0.7vh;
+    background: linear-gradient(to left, #70a9af, #71b2b9); 
+    padding-inline: 7vh;
+    left: 90vh;
+    align-items: center;
+    font-size: 3vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    font-weight: 700;
+    z-index: 0;
+    border-radius: 3px;
+}
+
+.section5 .text4{
+    position: fixed;
+    padding-top: 1.5vh;
+    padding-bottom: 0.7vh;
+
+    background: linear-gradient(to left, #3f7d84, #55969d); 
+    left: 127vh;
+    padding-inline: 7vh;
+    align-items: center;
+    font-size: 3vw;
+    font-family: 'GRIFTER';
+    color: #ffffff;
+    font-weight: 700;
+    z-index: 0;
+    border-radius: 3px;
+    border-color: #000000;
+}
+
+.section5 .main{
+    display: flex;
+    flex-flow: row; 
+}
+
+.door1:hover {
+    background-color: #efefef34; /* Warna saat di-hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.door1:active {
+    background-color: #65656534; /* Warna saat tombol ditekan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mengurangi bayangan saat ditekan */
+    transform: scale(0.98);  /* Efek mengecil sedikit saat tombol ditekan */
+}
+
+.door2:hover {
+    background-color: #efefef34; /* Warna saat di-hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.door2:active {
+    background-color: #65656534; /* Warna saat tombol ditekan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mengurangi bayangan saat ditekan */
+    transform: scale(0.98);  /* Efek mengecil sedikit saat tombol ditekan */
+}

@@ -1,0 +1,843 @@
+html {
+    height: 100vh;
+    /* overflow: hidden; */
+    scroll-behavior: smooth; 
+    background-color: #000000;
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  
+  font-family: 'GRIFTER';
+  color:rgb(255, 255, 255);
+  perspective: 1px;
+  overflow-x: hidden
+}
+
+.text {
+  align-self: center;
+  font-family: 'GRIFTER';
+  text-align: center;
+  font-size: 1VW;
+  /* color:white; */
+}
+
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+
+  background-color:#000000;
+  background-size:100%;
+
+  color:white;
+}
+
+.section1 .text1{
+  padding-top: 10vh;
+  font-size: 2vw;
+}
+
+.section1 .text2{
+  padding-top: 32vh;
+  font-size: 5vw;
+
+  background: #003973;
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section2 {
+  display: flex;
+  flex-flow: row;
+
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  background: linear-gradient(135deg, #003973, #e5e5be);
+}
+
+.section2 img{
+  align-self: center;
+  width: auto;
+  height: 60%;
+  padding-right: 5vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(10deg);
+}
+ 
+
+.section2 .info{
+  align-self: center;
+  padding-left: 0vw;
+  padding-right: 6vw;
+}
+
+.section2 .text1{
+  /* padding-left: 10vw; */
+  align-self: center;
+  width: auto;
+  height: 30%;
+  font-size: 3vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+ 
+.section2 .text2{
+  /* padding-left: 10vw; */
+  align-self: center;
+  text-align: justify;
+  width: auto;
+  height: 30%;
+  font-size: 1.8vw;
+  padding-bottom: 1vw;
+}
+
+.section2 .text2 span{
+    background: rgba(0, 0, 0, 1); /* Warna gradien */
+    -webkit-background-clip:padding-box;
+    -webkit-text-fill-color:#ffffff; 
+}
+
+
+
+.section3 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section3 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section3 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section3 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section3 .text2{
+  font-size: 3vw;
+  padding-top: 40vh;
+  text-align: center;
+  
+}
+
+.section3 .text3{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section3 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section3 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+
+.section3 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section4 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section4 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section4 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section4 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section4 .text2{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section4 .text3{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section4 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 .text6{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section4 .text7{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+.section14 {
+  display: flex;
+  flex-flow: row;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  z-index: 3;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section14 .info {
+  display: flex;
+  flex-flow: column;
+  z-index: 4;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section5 {
+  display: flex;
+  flex-flow: row;
+
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section5 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section5 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: center;
+  z-index: 3;
+}
+
+.section5 .text1{
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section5 .text2{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section5 .text3{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section5 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section5 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section5 .text6{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section5 .text7{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section5 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+
+.section6 {
+  display: flex;
+  flex-flow: row;
+
+  color: #ffffff;
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section6 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section6 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: center;
+  z-index: 3;
+}
+
+.section6 .text1{
+  font-size: 4vw;
+  text-align: start;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section6 .text2{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section6 .text3{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section6 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section6 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section6 .text6{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section6 .text7{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section6 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.table-container {
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.space-table {
+  width: 60%; /* Reduced width for a more compact look */
+  border-collapse: collapse;
+  color: white;
+}
+
+.space-table th, .space-table td {
+  border: 1px solid white;
+  padding: 7px; /* Reduced padding for a flatter appearance */
+  text-align: left;
+}
+
+.space-table th {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 15px; /* Adjusted padding for a flatter list */
+}
+
+
+.section7 {
+  display: flex;
+  flex-flow: row;
+
+  padding-top:50vh ;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section7 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.section7 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section7 .text1{
+  position: fixed;
+  font-size: 3vw;
+  justify-self: center;
+  text-align: start;
+  padding-top: 5vh;
+  padding-inline: 6vw;
+  padding-left: 45vw;
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+}
+
+.info .col{
+  display: flex;
+  flex-flow: row;
+}
+
+.section7 .text2{
+  font-size: 2vw;
+  padding-top: 45vh;
+  padding-inline: 5vh;
+  padding-left: 3vh;
+  text-align: justify;
+  
+}
+
+.section7 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+
+.section8 {
+  display: flex;
+  flex-flow: row;
+
+  padding-top:10vh ;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section8 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.section8 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section8 .text1{
+  position: fixed;
+  font-size: 3vw;
+  justify-self: center;
+  text-align: start;
+  padding-top: 5vh;
+  padding-inline: 6vw;
+  padding-left: 5vw;
+  padding-right: 50vw;
+
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+}
+
+.info .col{
+  display: flex;
+  flex-flow: row;
+}
+
+.section8 .text2{
+  font-size: 2vw;
+  padding-top: 45vh;
+  padding-inline: 5vh;
+  padding-left: 3vh;
+  text-align: justify;
+  
+}
+
+.section8 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section9 {
+  display: flex;
+  flex-flow: row;
+
+  padding-top:10vh ;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section9 img .obiii1{
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.section9 .info{
+  display: flex;
+  flex-flow: row;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section9 .text1{
+  position: fixed;
+  font-size: 3vw;
+  justify-self: center;
+  text-align: start;
+  padding-top: 5vh;
+  padding-inline: 6vw;
+  padding-left: 5vw;
+  padding-right: 50vw;
+
+
+  background: linear-gradient(135deg, #003973, #e5e5be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+}
+
+.section9 .info .col{
+  display: flex;
+  flex-flow: column;
+  width: 50vw;
+  height: 20vh;
+
+}
+
+.col .obiii1{
+  width: 20vw;
+  height: auto;
+  /* padding-top: 10vh; */
+}
+
+.col .obiii2{
+  width: 20vw;
+  height: auto;
+  /* padding-top: 10vh; */
+}
+
+
+.section9 .text2{
+  font-size: 2vw;
+  padding-top: 20vh;
+  padding-inline: 5vh;
+  padding-left: 3vh;
+  text-align: justify;
+  padding-bottom: 5vh;
+  
+}
+
+.section9 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+
+button{
+  /* position:relative; */
+  align-self: flex-end;
+  top: 200vh;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+  font-family: 'GRIFTER';
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #323638 2px;
+  text-decoration: none;
+
+  padding-inline: 2%;
+  margin-inline: 3%;
+  /* margin-bottom: 3%; */
+  transform: translateY(-7vh);
+
+  transition: 0.3s ease;
+}
+/* Hover effect */
+button:hover {
+  opacity: .5;
+}
+
+button::after{
+  color: #929292;
+}
+
+
+
+
+.section17{
+  display:flex;
+  flex-flow:row;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  font-size: 1vw;
+}
+
+.graph1 .tg1{
+  text-align: center;
+  font-size:3vh;
+}
+.graph2 .tg1{
+  text-align: center;
+  font-size:3vh;
+}
+.graph3 .tg1{
+  text-align: center;
+  font-size:3vh;
+}
+
+
+
+.section17 .graph1{
+  width: 33vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  padding :0.5%
+}
+.section17 .graph2{
+  width: 33vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  padding :0.5%
+}
+.section17 .graph3{
+  width: 33vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  padding :0.5%
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="vision.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+
+    
+
+
+
+    <div class="section1">
+      <div class="text1">But... first of all</div>
+      <div class="text2">Why Vision ?</div>
+    </div>
+
+    <div class="section2">
+      <img src="../../img/mouseeye.png" alt="Hallo Mouse">
+      <div class="info">
+        <div class="text1">Approximately 45% astronaut short-term and long-term missions to the ISS are reported to experience changes in near or distant visual acuity.</div>
+        <div class="text2"><span>This phenomenon is called "Spaceflight-Associated Neuro-Ocular Syndrome" (SANS),</span>  where the microgravity environment causes changes to the eyes and brain, including increased pressure in the head that can affect the structure of the eyes.</div>
+      </div>    
+    </div>
+    
+
+
+
+    <div class="section3">
+        <div class="info">
+          <div class="text1">Find more what happen on vision on the space</div>
+          <div class="text2">Mission Performance</div>
+          <div class="text3">Astronauts <span>perform critical tasks,</span> like conducting experiments and repairs, requiring sharp vision for accuracy.</div>
+          <div class="text4">Navigation and Safety</div>
+          <div class="text5">Clear vision <span>is vital for navigating</span> the microgravity environment and ensuring safety, especially during spacewalks..</div>
+          </div>
+        <div class="square"></div>
+        <img src="../img\mouselab1.png">
+    </div>
+
+    <div class="section4">
+      <div class="info">
+        <!-- <div class="text1">Find more what happen on vision on the space</div> -->
+        <div class="text2">Long Duration missions</div>
+        <div class="text3">Maintaining <span>good vision is crucial for missions </span> like Mars expeditions, as changes due to microgravity can hinder task performance.</div>
+        <div class="text4">Dependeence on technology</div>
+        <div class="text5"><span>Astronauts need good vision </span> to use computers, control panels, and communicate with Mission Control effectively.</div>
+        <div class="text6">Health and wellbeing</div>
+        <div class="text7"><span>Impaired vision can cause</span> discomfort, headaches, and stress, affecting overall wellbeing during long missions.</div>
+      </div>
+    </div>
+
+    <button id="menu"> COUNTINUE THE JOURNEY</button>
+    <h2 class="text">Interactive Space Experiment Data</h2>
+    
+    <div class="section17">
+      
+      <div class="graph1">
+        <div class="tg1">GC content vs Duplication Rate</div>
+        <div id="plotly-3d-chart-1"></div>
+        <div class="tg2">- The increased variability in the Flight group across all metrics (GC content, duplication rate, and total sequences) indicates that spaceflight induced more significant and diverse biological responses. These changes may be due to the unique environment of microgravity, which affects not only muscle tissues but possibly other related systems (like the vascular systems studied in the experiment).</div>
+      </div>
+
+      <div class="graph2">
+        <div class="tg1">Per-base Quality Score</div>
+        <div class ='tt1'id="plotly-3d-chart-2"></div>
+        <div class="tg2">Stable RNA Integrity: The consistent quality scores across base positions suggest that the muscle tissues from the ground control mice maintained stable RNA integrity throughout the experiment. This indicates that normal gravity and standard habitat conditions did not induce significant stress or degradation in the tissue samples.</div>
+      </div>    
+      
+      <div class="graph3">
+        <div class="tg1">PCA Quality Score</div>
+        <div id="plotly-3d-chart-3"></div>
+        <div class="tg2">The PCA plot effectively highlights the distinct biological impacts of spaceflight on the mice, particularly in terms of how it altered RNA quality scores and possibly gene expression. The spaceflight-induced changes created a clear separation from both the Ground Control and Vivarium groups. The Vivarium group, while different from Ground Control, exhibited less pronounced variability, reinforcing the fact that microgravity had the most significant impact on the biology of the Spaceflight mice.</div>
+      </div>     
+  
+    </div>
+
+
+
+    <div class="section5">
+      <div class="info">
+        <div class="text1">Now... Lets dive in to the data</div>
+      </div>
+    </div>
+
+    <div class="section6">
+      <div class="info">
+        <div class="text1">Find more what happen on vision on the space</div>
+        <!-- <div class="text2">Long Duration missions</div>
+        <div class="text3">Maintaining <span>good vision is crucial for missions </span> like Mars expeditions, as changes due to microgravity can hinder task performance.</div>
+        <div class="text4">Dependeence on technology</div>
+        <div class="text5"><span>Astronauts need good vision </span> to use computers, control panels, and communicate with Mission Control effectively.</div>
+        <div class="text6">Health and wellbeing</div>
+        <div class="text7"><span>Impaired vision can cause</span> discomfort, headaches, and stress, affecting overall wellbeing during long missions.</div> -->
+      </div>
+
+      <div class="table-container"></div>
+        <table class="space-table">
+            <tr>
+                <th>Organism</th>
+                <td>Mus Musculus</td>
+            </tr>
+            <tr>
+                <th>Strain</th>
+                <td>C57BL/6J</td>
+            </tr>
+            <tr>
+                <th>Spaceflight</th>
+                <td>
+                    <ul>
+                        <li>Spaceflight</li>
+                        <li>Vivarium Control</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Launch</th>
+                <td>16 - 17 Weeks</td>
+            </tr>
+            <tr>
+                <th>Sex</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>Duration</th>
+                <td>38 Days</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section7">
+      <div class="info">
+        <div class="text1">A. Photoreceptor Outer Segments and Disruption of the RPE Monolayer in the Retina</div>
+        <div class="col">
+        <img src="../../img/Obidata1.jpg">
+        <div class="text2">Mice sent to space experienced significant retinal degeneration, including a reduction in the length of the photoreceptor outer segments and disruption of the retinal pigment epithelium (RPE) layer. The mice exposed to the space environment showed shortened or missing photoreceptor outer segments, as well as disruptions in the RPE structure that was not properly connected or attached to the retina. These disruptions indicate that exposure to space conditions can interfere with the normal development of the retina in neonatal mice.</div>
+      </div>
+        <!-- <div class="text3">Maintaining <span>good vision is crucial for missions </span> like Mars expeditions, as changes due to microgravity can hinder task performance.</div>
+        <div class="text4">Dependeence on technology</div>
+        <div class="text5"><span>Astronauts need good vision </span> to use computers, control panels, and communicate with Mission Control effectively.</div>
+        <div class="text6">Health and wellbeing</div>
+        <div class="text7"><span>Impaired vision can cause</span> discomfort, headaches, and stress, affecting overall wellbeing during long missions.</div> -->
+      </div>
+    </div>
+
+    <div class="section8">
+      <div class="info">
+        <div class="text1">B. Disruption of Normal IPL Development</div>
+        <div class="col">
+          <div class="text2">It shows that the inner plexiform layer (IPL), which connects bipolar cells to amacrine and ganglion cells in the retina, experienced a significant reduction in thickness in mice exposed to the spaceflight environment. In the ground control group, normal IPL development was observed from postnatal day 3 to day 15, with the average width increasing at each developmental stage. However, in the mice that flew in space, there was a decrease in IPL thickness at all developmental stages. This indicates shrinkage and degeneration of the retinal structure due to exposure to the space environment.</div>
+          <img src="../../img/Obidata1.jpg">
+      </div>
+        <!-- <div class="text3">Maintaining <span>good vision is crucial for missions </span> like Mars expeditions, as changes due to microgravity can hinder task performance.</div>
+        <div class="text4">Dependeence on technology</div>
+        <div class="text5"><span>Astronauts need good vision </span> to use computers, control panels, and communicate with Mission Control effectively.</div>
+        <div class="text6">Health and wellbeing</div>
+        <div class="text7"><span>Impaired vision can cause</span> discomfort, headaches, and stress, affecting overall wellbeing during long missions.</div> -->
+      </div>
+    </div>
+
+    <div class="section9">
+      <div class="info">
+        <div class="text1">C. Loss of Ganglion Cells</div>
+        <div class="text2">There are 25 types of ganglion cells in the mammalian retina, varying in size and branching patterns. In the control mice's retina, the ganglion cells appeared round with abundant cytoplasm, while in mice that flew in space, the cells were elongated, formed irregular layers, had little cytoplasm, and appeared unhealthy. This indicates that spaceflight causes damage to the ganglion cell layer of the retina.</div>
+        <div class="col">
+          <img src="../../img/obi2.png" class="obiii2">
+          <img src="../../img/obi1.png" class="obiii1">
+        </div>
+        <!-- <div class="text3">Maintaining <span>good vision is crucial for missions </span> like Mars expeditions, as changes due to microgravity can hinder task performance.</div>
+        <div class="text4">Dependeence on technology</div>
+        <div class="text5"><span>Astronauts need good vision </span> to use computers, control panels, and communicate with Mission Control effectively.</div>
+        <div class="text6">Health and wellbeing</div>
+        <div class="text7"><span>Impaired vision can cause</span> discomfort, headaches, and stress, affecting overall wellbeing during long missions.</div> -->
+      </div>
+    </div>
+    </div>
+
+
+
+    <script src="vision.js"></script>
+  </body>
+</html>
+
+

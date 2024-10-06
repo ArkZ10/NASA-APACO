@@ -1,0 +1,840 @@
+html {
+    height: 100vh;
+    /* overflow: hidden; */
+    scroll-behavior: smooth; 
+    background-color: #000000;
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  
+  font-family: 'GRIFTER';
+  color:rgb(255, 255, 255);
+  perspective: 1px;
+  overflow-x: hidden
+}
+
+.text {
+  align-self: center;
+  font-family: 'GRIFTER';
+  text-align: center;
+  font-size: 1VW;
+  /* color:white; */
+}
+
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+
+  background-color:#000000;
+  background-size:100%;
+
+  color:white;
+}
+
+.section1 .text1{
+  padding-top: 10vh;
+  font-size: 2vw;
+
+}
+
+.section1 .text2{
+  padding-top: 32vh;
+  font-size: 5vw;
+  padding-inline: 15vh;
+
+  background: #003973;
+  background: linear-gradient(135deg, #343834, #0f9b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section2 {
+  display: flex;
+  flex-flow: row;
+
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  background: linear-gradient(135deg, #343834, #0f9b0f);
+}
+
+.section2 img{
+  align-self: center;
+  width: auto;
+  height: 60%;
+  padding-right: 5vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(10deg);
+}
+ 
+
+.section2 .info{
+  align-self: center;
+  padding-left: 0vw;
+  padding-right: 6vw;
+}
+
+.section2 .text1{
+  /* padding-left: 10vw; */
+  align-self: center;
+  width: auto;
+  height: 30%;
+  font-size: 3vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+ 
+.section2 .text2{
+  /* padding-left: 10vw; */
+  align-self: center;
+  text-align: justify;
+  width: auto;
+  height: 30%;
+  font-size: 1.8vw;
+  padding-bottom: 1vw;
+}
+
+.section2 .text2 span{
+    background: rgba(0, 0, 0, 1); /* Warna gradien */
+    -webkit-background-clip:padding-box;
+    -webkit-text-fill-color:#ffffff; 
+}
+
+
+
+.section3 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section3 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section3 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section3 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg,#343834, #0f9b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section3 .text2{
+  font-size: 3vw;
+  padding-top: 40vh;
+  text-align: center;
+  
+}
+
+.section3 .text3{
+  font-size: 2vw;
+  padding-top: 25vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section3 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section3 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+
+.section3 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section4 {
+  display: flex;
+  flex-flow: row;
+
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #0c0c0c;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+.section4 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section4 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: center;
+  z-index: 3;
+}
+
+.section4 .text1{
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg,#343834, #0f9b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section4 .text2{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 10vh;
+  
+}
+
+.section4 .text3{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section4 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 .text6{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section4 .text7{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section4 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+.section6 {
+  display: flex;
+  flex-flow: row;
+
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  background: linear-gradient(135deg, #343834, #0f9b0f);
+}
+
+.section6 img{
+  align-self: center;
+  width: auto;
+  height: 60%;
+  padding-right: 5vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(10deg);
+}
+ 
+
+.section6 .info{
+  align-self: center;
+  padding-left: 0vw;
+  padding-right: 6vw;
+}
+
+.section6 .text1{
+  /* padding-left: 10vw; */
+  align-self: center;
+  width: auto;
+  height: 30%;
+  font-size: 3vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+ 
+.section6 .text2{
+  /* padding-left: 10vw; */
+  align-self: center;
+  text-align: justify;
+  width: auto;
+  height: 30%;
+  font-size: 1.8vw;
+  padding-bottom: 1vw;
+}
+
+.section6 .text2 span{
+    background: rgba(0, 0, 0, 1); /* Warna gradien */
+    -webkit-background-clip:padding-box;
+    -webkit-text-fill-color:#ffffff; 
+}
+
+.section7 {
+  display: flex;
+  flex-flow: row;
+
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  /* background: linear-gradient(135deg, #DD7457, #ED0F19); */
+}
+
+
+.section7 img {
+  width: auto;
+  height: 100vh;
+  transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.square {
+  position: fixed;
+  align-items:start;
+  left: 80vh;
+  width: 55vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+
+.section7 .info{
+  display: flex;
+  flex-flow: column;
+  justify-self: center;
+  align-self: flex-start;
+  z-index: 3;
+}
+
+.section7 .text1{
+  position: fixed;
+  font-size: 4vw;
+  justify-self: center;
+  text-align: center;
+  padding-top: 10vh;
+  padding-inline: 6vw;
+
+  background: linear-gradient(135deg,#343834, #0f9b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.section7 .text2{
+  font-size: 3vw;
+  padding-top: 40vh;
+  text-align: center;
+  
+}
+
+.section7 .text3{
+  font-size: 2vw;
+  padding-top: 25vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+.section7 .text4{
+  font-size: 3vw;
+  padding-top: 5vh;
+  text-align: center;
+  
+}
+
+.section7 .text5{
+  font-size: 2vw;
+  padding-top: 5vh;
+  text-align: justify;
+  padding-inline: 2vw;
+}
+
+
+.section7 span{
+  background: rgb(80, 140, 164); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#000000; 
+}
+
+
+
+.button1 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: #353535;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  font-weight:600;
+  top: 85vh;
+  left: 90vw;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+  }
+
+  .button1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10rem;
+  z-index: -2;
+  }
+  .button1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #797979; /* darken(#0cf, 15%) */
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+  }
+  .button1:hover {
+  color: #fff;
+  }
+  .button1:hover:before {
+  width: 100%;
+  }
+  
+  .button2 {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    color: #353535;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    font-weight:600;
+    top: 185vh;
+    left: 90vw;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+    }
+  
+    .button2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10rem;
+    z-index: -2;
+    }
+    .button2:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #797979; /* darken(#0cf, 15%) */
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+    }
+    .button2:hover {
+    color: #fff;
+    }
+    .button2:hover:before {
+    width: 100%;
+    }
+    
+
+   .button3 {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 10rem;
+      color: #353535;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.15rem;
+      transition: all 0.3s;
+      position: fixed;
+      overflow: hidden;
+      z-index: 1;
+      font-weight:600;
+      top: 295vh;
+      left: 90vw;
+      font-family: Arial;
+      text-decoration: none;
+      font-size: 20px;
+      }
+    
+      .button3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(241, 241, 241);
+      border-radius: 10rem;
+      z-index: -2;
+      }
+      .button3:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #797979; /* darken(#0cf, 15%) */
+      transition: all 0.3s;
+      border-radius: 10rem;
+      z-index: -1;
+      }
+      .button3:hover {
+      color: #fff;
+      }
+      .button3:hover:before {
+      width: 100%;
+      }
+       
+
+      .button4 {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 10rem;
+        color: #353535;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: fixed;
+        overflow: hidden;
+        z-index: 1;
+        font-weight:600;
+        top: 395vh;
+        left: 90vw;
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 20px;
+        }
+      
+        .button4:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(241, 241, 241);
+        border-radius: 10rem;
+        z-index: -2;
+        }
+        .button4:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #797979; /* darken(#0cf, 15%) */
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+        }
+        .button3:hover {
+        color: #fff;
+        }
+        .button4:hover:before {
+        width: 100%;
+        }
+        
+
+
+        .button6 {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          border-radius: 10rem;
+          color: #353535;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          letter-spacing: 0.15rem;
+          transition: all 0.3s;
+          position: fixed;
+          overflow: hidden;
+          z-index: 1;
+          font-weight:600;
+          top: 510vh;
+          left: 90vw;
+          font-family: Arial;
+          text-decoration: none;
+          font-size: 20px;
+          }
+        
+          .button6:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(241, 241, 241);
+          border-radius: 10rem;
+          z-index: -2;
+          }
+          .button6:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: #797979; /* darken(#0cf, 15%) */
+          transition: all 0.3s;
+          border-radius: 10rem;
+          z-index: -1;
+          }
+          .button6:hover {
+          color: #fff;
+          }
+          .button6:hover:before {
+          width: 100%;
+          }
+          
+
+
+          .button7 {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 10rem;
+            color: #353535;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.15rem;
+            transition: all 0.3s;
+            position: fixed;
+            overflow: hidden;
+            z-index: 1;
+            font-weight:600;
+            top: 625vh;
+            left: 90vw;
+            font-family: Arial;
+            text-decoration: none;
+            font-size: 20px;
+            }
+          
+            .button7:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(241, 241, 241);
+            border-radius: 10rem;
+            z-index: -2;
+            }
+            .button7:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #797979; /* darken(#0cf, 15%) */
+            transition: all 0.3s;
+            border-radius: 10rem;
+            z-index: -1;
+            }
+            .button7:hover {
+            color: #fff;
+            }
+            .button7:hover:before {
+            width: 100%;
+            }
+            
+
+.section8 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-items: center;
+  background-color:#000000;
+  background-size:100%;
+
+  color:white;
+}
+
+.section8 .text1{
+  padding-top: 10vh;
+  font-size: 2vw;
+
+}
+
+.section8 .text2{
+  padding-top: 32vh;
+  font-size: 5vw;
+  padding-inline: 15vh;
+
+  background: #003973;
+  background: linear-gradient(135deg, #343834, #0f9b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan sehingga gradien terlihat */
+
+}
+
+.button8 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: #353535;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  font-weight:600;
+  top: 725vh;
+  left: 50vw;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+  }
+
+  .button8:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10rem;
+  z-index: -2;
+  }
+  .button8:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #797979; /* darken(#0cf, 15%) */
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+  }
+  .button8:hover {
+  color: #fff;
+  }
+  .button8:hover:before {
+  width: 100%;
+  }

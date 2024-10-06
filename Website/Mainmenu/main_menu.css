@@ -1,0 +1,174 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth; 
+  }
+
+  /* zoom on :hover
+  effect cursor
+  gradient font */
+  
+  @font-face {
+    font-family: 'GRIFTER';
+    src: url('font/grifter_bold_700-webfont.woff2') format('woff2'),
+    url('font/grifter_bold_700-webfont.woff') format('woff'),
+    url('font/GRIFTER Bold 700.ttf') format('truetype'); /* Lokasi file font */
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background: #222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    scroll-snap-type:y unset; /* Enables scroll snapping */
+  }
+  
+ 
+.text {
+    font-family: 'GRIFTER';
+    text-align: center;
+    font-size: 5vw;
+    color:white;
+  }
+  
+  .section1 {
+    /* display: flex; */
+    flex-direction: column;
+    background-image: url(../img/labbio.jpg);
+    min-height: 100%;
+    background-size: 100%;
+    position: flex;
+    transform-style: preserve-3d;
+    width: 100vw;
+    height: 100%; 
+    justify-content:baseline;
+    align-items: center;
+  }
+  
+  .section1 .bodyc{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content:center;
+    align-items: top;
+    padding-top: 5%;
+    padding-right: 7%;
+  }
+  
+  .section1 .bodyc .img1{
+    position: absolute;
+    top: 40vh;
+    width: 40%;
+    height: 60vh;
+    object-position: 30% 10%;
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    align-items: end;
+    
+  }
+  .section1 .bodyc .img2{
+    position: absolute;
+    top: 8vh;
+    left: 47vw;
+    width: 40%;
+    height: 92vh;
+    object-position: 50% 20%;
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    align-items: end;
+  }
+
+  .section1 .text1 {
+    position: absolute;
+    top: 31vh;
+    left: 7vw;
+    padding-right: 67vw;
+
+    font-family: 'GRIFTER';
+    font-size: 4vw;
+    color: rgb(23, 23, 23);
+    justify-content:left;
+    text-align: center;
+    font-size: 2vw;
+    z-index: 2;
+  }
+  
+  .section1 .text2 {
+    position: absolute;
+    top: 80vh;
+    left: 55vw;
+    padding-right: 5vw;
+
+    font-family: 'GRIFTER';
+    font-size: 4vw;
+    color: rgb(21, 21, 21);
+    justify-content:left;
+    text-align: left;
+    font-size: 2vw;
+    z-index: 2;
+  }
+
+.original-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #252525;
+    border-radius: 3vh;
+    border: 1vh solid #171717;
+    background-image: linear-gradient(130deg, rgba(245, 245, 245, 1), rgb(132, 132, 132));
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'GRIFTER';
+    z-index: 10; /* Ensures button is on top */
+    padding: 1vw 3vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.original-button .big1{
+  padding-left : 4.5vw;
+  font-size: 5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.original-button .big2{
+  padding-right : 5vw;
+  font-size: 5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+#liver {
+    /* display: block; */
+    position: absolute;
+    top: 10vh;
+    left: 47vw;
+
+    width: 100vh;
+    padding-left: 6%;
+    height: 10vw;
+    width: auto;
+    font-size: 3vw
+}
+#muscle {
+    /* display: block; */
+    position: absolute;
+    top: 35vh;
+    left: 47vw;
+
+    width: 100vh;
+    padding-right: 10.9%;
+    height: 9vw;
+    width: auto;
+    font-size: 3vw
+}
+
+.black-border{
+  background: rgba(0, 0, 0, 1); /* Warna gradien */
+  -webkit-background-clip:padding-box;
+  -webkit-text-fill-color:#ffffff; 
+}
