@@ -9,7 +9,7 @@ Our project is called "MOUSETRONAUT", it is an interactive web-based educational
 
 <div align="center">
   
-  **_👉 [Visit our website!](http://mousetronout.co/) 👈_**
+  **_👉 [Visit our website!](http://mousetronout.earth/) 👈_**
 
 </div>
 
