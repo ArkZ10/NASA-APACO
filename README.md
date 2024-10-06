@@ -11,7 +11,7 @@ Our project is called "MOUSETRONAUT", it is an interactive web-based educational
 
 ## Repository Structure
 
-This repository contains various resources and files for the NASA-APACO project. Below is an overview of the folders and their contents:
+This repository contains various resources and files for the MOUSETRONAUT. Below is an overview of the folders and their contents:
 
 ### `Data-Visualization`
 - **Purpose**: Contains the Jupyter Notebook(s) used for data analysis and visualization.
