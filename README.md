@@ -7,7 +7,11 @@
 ## Project
 Our project is called "MOUSETRONAUT", it is an interactive web-based educational comic that targeted middle until the general public audience to better understand the journey of becoming an astronaut. This project end goal is to improve the public knowledge on enlight the public on how important data from experiment being curated and leads to astronaut safety and create the mitigation and countermeasure before launching into space. The project will use Larry the mousetronaut as the mascot in becoming the first mouse astronaut after going through what humans do. With data visualization regarding spaceflight body changes and interactive branch stories, it will make this website more entertaining yet educating for the general public in learning to put themselves in astronaut shoes. This multilateral approach will be suitable for all ages and will deliver APACO’s message on the safety and precautions NASA astronauts go through, inspiring future astronauts about the pathway to becoming the next generation of space explorers.
 
-[Visit our website!](http://mousetronout.co/)
+<div align="center">
+  
+  **_👉 [Visit our website!](http://mousetronout.co/) 👈_**
+
+</div>
 
 ## Repository Structure
 
