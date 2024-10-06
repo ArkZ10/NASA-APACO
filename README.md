@@ -26,7 +26,12 @@ This repository contains various resources and files for the MOUSETRONAUT. Below
   - `GLDS-25_array_differential_expression_GLMicroArrayData.txt`: Differential expression data for the GLDS-25 array.
   - `multiqc_data_379.json`: MultiQC report data for dataset 379, used for quality control of sequencing results or similar metrics.
   - `multiqc_data_665.json`: MultiQC report data for dataset 665, similarly used for quality control metrics.
-  
+ 
+### `Machine-Learning`
+- **Purpose**: Contains files related to the machine learning models used to predict the quality of RNA datasets.
+- **Contents**: 
+  - Jupyter notebooks, and model files that are responsible for predicting the quality of RNA sequencing data. The models are trained on the provided datasets and the results are analyzed to assess RNA quality metrics.
+
 ### `Website`
 - **Purpose**: Contains all necessary files to build the project’s website.
 - **Contents**: 
