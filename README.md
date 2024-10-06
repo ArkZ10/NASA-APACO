@@ -13,11 +13,6 @@ Our project is called "MOUSETRONAUT", it is an interactive web-based educational
 
 This repository contains various resources and files for the MOUSETRONAUT. Below is an overview of the folders and their contents:
 
-### `Data-Visualization`
-- **Purpose**: Contains the Jupyter Notebook(s) used for data analysis and visualization.
-- **Contents**: 
-  - `NASA_SPACE_APPS.ipynb`: A notebook dedicated to data visualization and analysis, including plots and insights derived from the datasets used in the project.
-
 ### `Dataset`
 - **Purpose**: Holds all the raw data used for the analysis in this project.
 - **Contents**: 
@@ -26,7 +21,12 @@ This repository contains various resources and files for the MOUSETRONAUT. Below
   - `GLDS-25_array_differential_expression_GLMicroArrayData.txt`: Differential expression data for the GLDS-25 array.
   - `multiqc_data_379.json`: MultiQC report data for dataset 379, used for quality control of sequencing results or similar metrics.
   - `multiqc_data_665.json`: MultiQC report data for dataset 665, similarly used for quality control metrics.
- 
+
+### `Data-Visualization`
+- **Purpose**: Contains the Jupyter Notebook(s) used for data analysis and visualization.
+- **Contents**: 
+  - `Data-Visualization.ipynb`: A notebook dedicated to data visualization and analysis, including plots and insights derived from the datasets used in the project.
+
 ### `Machine-Learning`
 - **Purpose**: Contains files related to the machine learning models used to predict the quality of RNA datasets.
 - **Contents**: 
